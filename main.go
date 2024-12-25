@@ -20,7 +20,7 @@ func main() {
 	}
 	hashedURL := HashURL(URL)
 
-	log.Println("Shortened URL:", "localhost:8080/"+hashedURL)
+	log.Println("Shortened URL:", "http://localhost:8080/"+hashedURL)
 
 	SaveURLToFile(hashedURL, URL)
 	ServeServer()
